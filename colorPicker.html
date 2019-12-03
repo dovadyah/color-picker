@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Color Picker</title>
+ 	<link rel="stylesheet" type="text/css" href="colorPicker.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+ 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+
+
+ 	<div class="jumbotron jumbotron-fluid" id="title_back">
+	 	<div  class="container" id="game_title">
+	 		<h3 class="center_title">The Great</h3>
+	 		<h1 class="center_title">RGB(<span id="red">0</span>, <span id="green">0</span>, <span id="blue">0</span>)</h1>
+	 		<h3 class="center_title">Guessing Game</h3>
+	 		<h1 id="points">Points: <span id="userPoints">0</span></h1>
+	 	</div>
+	 </div>
+
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+   			<ul class="navbar-nav ">
+
+      			<li class="nav-item controls" >
+        			<button class="btn btn-outline-dark" id="reset" >New Colors</button>
+     			</li>
+     			<li class="nav-item" id="try-again">
+        			<p id="fail"></p>
+      			</li>
+    			<li class="nav-item right-jus" >
+        			<button class="btn btn-outline-dark" id="easy">EASY</button>
+      			</li>
+      			<li class="nav-item right-jus" >
+        			<button class="btn btn-outline-dark" id="hard">HARD</button>
+      			</li>
+
+    		</ul>
+  		</div>
+	</nav>
+
+	<div id="container">
+		<!-- Set square to output only 3 if it is easy, and  6 if it is hard/. Default to 
+			easy -->
+		<div class="square" ></div>
+		<div class="square" ></div>
+		<div class="square" ></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<script type="text/javascript" src="colorPicker.js" async></script>
+ 
+ </body>
+ </html>
